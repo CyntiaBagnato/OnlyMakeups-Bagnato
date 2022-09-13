@@ -110,6 +110,7 @@
   font-style: oblique;
   font-variant: small-caps;
   background-color: #e76b8a77;
+  width: 50%;
 }
 }
 
@@ -117,6 +118,7 @@
 
 .main{
  h1 {
+  color: wheat;
   display: flex;
   justify-content: center;}
  form {
@@ -125,11 +127,15 @@
   justify-items: center;
   flex-direction: column;
   align-items: center;}
+  h2{
+    color: wheat;
+  }
 }
 
 /* FAQ */
 
 .faq {
+  color: wheat;
   font-size: x-large;
   font-style: oblique;
   font-variant: small-caps;
