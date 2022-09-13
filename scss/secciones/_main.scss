@@ -1,9 +1,10 @@
 .main {
   min-height: 100vh;
   background-image: url(https://res.cloudinary.com/dya1efdwp/image/upload/v1662511234/proyecto_3/fondo-main_wgkmhn.jpg);
-   iframe { padding: 10px }
+  iframe {
+    padding: 10px;
+  }
 }
-
 
 .grid-container {
   display: grid;
@@ -13,10 +14,11 @@
     "img1 img2 img3"
     "img4 img5 img6"
     "img7 img8 img9";
-   img { padding: 10px;
-  width: 200px;
-  border-radius: 30px;}
-
+  img {
+    padding: 10px;
+    width: 200px;
+    border-radius: 30px;
+  }
 }
 
 .img1 {
@@ -66,17 +68,22 @@
   font-size: x-large;
 }
 
-.mainProductos { 
+.mainProductos {
   min-height: 100vh;
   background-image: url(https://res.cloudinary.com/dya1efdwp/image/upload/v1662511234/proyecto_3/fondo-main_wgkmhn.jpg);
- img {
-  padding: 10px;
-  border-radius: 30px;
-}
- aside {
-  grid-area: aside;
-  font-size: x-large;}
-
+  h1 {
+    color: wheat;
+  }
+  img {
+    padding: 10px;
+    border-radius: 30px;
+  }
+  aside {
+    color: wheat;
+    grid-area: aside;
+    font-size: x-large;
+    background-color: #e76b8a77;
+  }
 }
 
 .paletaJaclyn {
@@ -104,30 +111,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
- ol{
-  color: white;
-  font-size: x-large;
-  font-style: oblique;
-  font-variant: small-caps;
-  background-color: #e76b8a77;
-  width: 50%;
-}
+  ol {
+    color: white;
+    font-size: x-large;
+    font-style: oblique;
+    font-variant: small-caps;
+    background-color: #e76b8a77;
+    width: 50%;
+  }
 }
 
 /* Contacto */
 
-.main{
- h1 {
-  color: wheat;
-  display: flex;
-  justify-content: center;}
- form {
-  display: flex;
-  display: flex;
-  justify-items: center;
-  flex-direction: column;
-  align-items: center;}
-  h2{
+.main {
+  h1 {
+    color: wheat;
+    display: flex;
+    justify-content: center;
+  }
+  form {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
     color: wheat;
   }
 }
@@ -139,4 +147,6 @@
   font-size: x-large;
   font-style: oblique;
   font-variant: small-caps;
+  width: 50%;
+  background-color: #e76b8a77;
 }
