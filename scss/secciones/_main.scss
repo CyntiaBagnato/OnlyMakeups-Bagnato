@@ -113,6 +113,7 @@
       transition: 1s;
       }
 }
+}
 
 /* Contacto */
 
@@ -164,6 +165,10 @@
 
 /* FAQ */
 
+.mainfaq{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 .faq {
   color: wheat;
   font-size: x-large;

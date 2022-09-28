@@ -102,9 +102,7 @@
 .main-cc {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* Contacto */
-  /* FAQ */ }
+  align-items: center; }
   .main-cc h1 {
     color: wheat;
     display: flex;
@@ -125,41 +123,51 @@
       background-color: rgba(211, 107, 199, 0.501);
       border-radius: 15px;
       transition: 1s; }
-  .main-cc .main-contacto h1 {
+
+/* Contacto */
+.main-contacto h1 {
+  color: wheat;
+  display: flex;
+  justify-content: center; }
+
+.main-contacto form {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px; }
+  .main-contacto form input {
+    border-radius: 15px;
+    border-width: 3px;
+    border-color: #f9cad0;
+    background-color: #eeaed5d2; }
+    .main-contacto form input:hover {
+      border-color: #ff54be;
+      border-width: 6px; }
+  .main-contacto form textarea {
+    border-radius: 15px;
+    border-width: 3px;
+    border-color: #f9cad0;
+    background-color: #eeaed5d2; }
+    .main-contacto form textarea:hover {
+      border-color: #ff54be;
+      border-width: 6px; }
+  .main-contacto form label {
     color: wheat;
-    display: flex;
-    justify-content: center; }
-  .main-cc .main-contacto form {
-    display: flex;
-    justify-items: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px; }
-    .main-cc .main-contacto form input {
-      border-radius: 15px;
-      border-width: 3px;
-      border-color: #f9cad0;
-      background-color: #eeaed5d2; }
-      .main-cc .main-contacto form input:hover {
-        border-color: #ff54be;
-        border-width: 6px; }
-    .main-cc .main-contacto form textarea {
-      border-radius: 15px;
-      border-width: 3px;
-      border-color: #f9cad0;
-      background-color: #eeaed5d2; }
-      .main-cc .main-contacto form textarea:hover {
-        border-color: #ff54be;
-        border-width: 6px; }
-    .main-cc .main-contacto form label {
-      color: wheat;
-      background-color: #e76b8a77; }
-      .main-cc .main-contacto form label select {
-        color: #ff54be;
-        border-radius: 8px; }
-  .main-cc .main-contacto h2 {
-    color: wheat; }
-  .main-cc .faq {
+    background-color: #e76b8a77; }
+    .main-contacto form label select {
+      color: #ff54be;
+      border-radius: 8px; }
+
+.main-contacto h2 {
+  color: wheat; }
+
+/* FAQ */
+.mainfaq {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .mainfaq .faq {
     color: wheat;
     font-size: x-large;
     font-style: oblique;
@@ -168,7 +176,7 @@
     background-color: #e76b8a77;
     border-radius: 15px;
     font-family: 'Handlee', cursive; }
-    .main-cc .faq :hover {
+    .mainfaq .faq :hover {
       background-color: rgba(211, 107, 199, 0.501);
       border-radius: 15px;
       transition: 1s; }
