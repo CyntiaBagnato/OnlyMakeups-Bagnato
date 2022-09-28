@@ -18,6 +18,9 @@
     padding: 10px;
     width: 200px;
     border-radius: 30px;
+    &:hover{
+      zoom: 130%;
+    }
   }
 }
 
@@ -51,66 +54,51 @@
 
 /* Productos */
 
-.grid-container-productos {
-  display: grid;
-  grid-template-columns: repeat(3, 33.33%);
-  grid-template-areas:
-    "aside paletaJaclyn paletaDior"
-    "aside paletaNude glossRuby"
-    "aside brochas paletaBrillos";
-  justify-items: stretch;
-  align-items: stretch;
-  animation: backInRight;
-}
-
-.aside {
-  grid-area: aside;
-  font-size: x-large;
-}
-
 .mainProductos {
   min-height: 100vh;
   background-image: url(https://res.cloudinary.com/dya1efdwp/image/upload/v1662511234/proyecto_3/fondo-main_wgkmhn.jpg);
   h1 {
     color: wheat;
+    display: flex;
+    justify-content: center;
   }
   img {
     padding: 10px;
     border-radius: 30px;
   }
-  aside {
-    color: wheat;
-    grid-area: aside;
-    font-size: x-large;
-    background-color: #e76b8a77;
+}
+.card{
+  --bs-card-border-color: #dc3545;
+  --bs-card-border-radius: 1rem;
+  --bs-card-bg: #edb3b8f4;
+  img:hover{
+    border-radius: 15%;
+      overflow: hidden;
+      zoom: 20%;
+      transition: 1s;
+      }    
+  h5{
+    color:#ffffff;
   }
 }
 
-.paletaJaclyn {
-  grid-area: paletaJaclyn;
-}
-.paletaDior {
-  grid-area: paletaDior;
-}
-.paletaNude {
-  grid-area: paletaNude;
-}
-.glossRuby {
-  grid-area: glossRuby;
-}
-.brochas {
-  grid-area: brochas;
-}
-.paletaBrillos {
-  grid-area: paletaBrillos;
-}
 
 /* Cómo Comprar */
 
-.main {
+.main-cc {
   display: flex;
   flex-direction: column;
   align-items: center;
+  h1 {
+    color: wheat;
+    display: flex;
+    justify-content: center;
+  }
+  h2 {
+    color: wheat;
+    display: flex;
+    justify-content: center;
+  }
   ol {
     color: white;
     font-size: x-large;
@@ -118,13 +106,17 @@
     font-variant: small-caps;
     background-color: #e76b8a77;
     width: 50%;
-  }
+    font-family: 'Handlee', cursive;
+  :hover{
+      background-color: rgba(211, 107, 199, 0.501);
+      border-radius: 15px;
+      transition: 1s;
+      }
 }
 
 /* Contacto */
 
-.main {
-  
+.main-contacto {
   h1 {
     color: wheat;
     display: flex;
@@ -179,4 +171,12 @@
   font-variant: small-caps;
   width: 50%;
   background-color: #e76b8a77;
+  border-radius: 15px;
+  font-family: 'Handlee', cursive;
+  :hover{
+    background-color: rgba(211, 107, 199, 0.501);
+    border-radius: 15px;
+    transition: 1s;
+    }
+}
 }

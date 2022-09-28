@@ -1,7 +1,11 @@
-.header {
-    img {
-    width: 150px;}
-  
+.header{
+    img{
+    width: 150px;
+   &:hover{
+    width: 160px;
+    transition: 1.5s;
+   }
+  }
   }
   
   .nav-link{

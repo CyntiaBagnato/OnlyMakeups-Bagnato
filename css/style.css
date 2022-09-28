@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 * {
   margin: 0%;
   padding: 0%;
@@ -6,6 +7,9 @@
 
 .header img {
   width: 150px; }
+  .header img:hover {
+    width: 160px;
+    transition: 1.5s; }
 
 .nav-link {
   color: black;
@@ -40,6 +44,8 @@
     padding: 10px;
     width: 200px;
     border-radius: 30px; }
+    .grid-container img:hover {
+      zoom: 130%; }
 
 .img1 {
   grid-area: img1; }
@@ -69,109 +75,103 @@
   grid-area: img9; }
 
 /* Productos */
-.grid-container-productos {
-  display: grid;
-  grid-template-columns: repeat(3, 33.33%);
-  grid-template-areas: "aside paletaJaclyn paletaDior" "aside paletaNude glossRuby" "aside brochas paletaBrillos";
-  justify-items: stretch;
-  align-items: stretch;
-  animation: backInRight; }
-
-.aside {
-  grid-area: aside;
-  font-size: x-large; }
-
 .mainProductos {
   min-height: 100vh;
   background-image: url(https://res.cloudinary.com/dya1efdwp/image/upload/v1662511234/proyecto_3/fondo-main_wgkmhn.jpg); }
   .mainProductos h1 {
-    color: wheat; }
+    color: wheat;
+    display: flex;
+    justify-content: center; }
   .mainProductos img {
     padding: 10px;
     border-radius: 30px; }
-  .mainProductos aside {
-    color: wheat;
-    grid-area: aside;
-    font-size: x-large;
-    background-color: #e76b8a77; }
 
-.paletaJaclyn {
-  grid-area: paletaJaclyn; }
-
-.paletaDior {
-  grid-area: paletaDior; }
-
-.paletaNude {
-  grid-area: paletaNude; }
-
-.glossRuby {
-  grid-area: glossRuby; }
-
-.brochas {
-  grid-area: brochas; }
-
-.paletaBrillos {
-  grid-area: paletaBrillos; }
+.card {
+  --bs-card-border-color: #dc3545;
+  --bs-card-border-radius: 1rem;
+  --bs-card-bg: #edb3b8f4; }
+  .card img:hover {
+    border-radius: 15%;
+    overflow: hidden;
+    zoom: 20%;
+    transition: 1s; }
+  .card h5 {
+    color: #ffffff; }
 
 /* Cómo Comprar */
-.main {
+.main-cc {
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  .main ol {
+  align-items: center;
+  /* Contacto */
+  /* FAQ */ }
+  .main-cc h1 {
+    color: wheat;
+    display: flex;
+    justify-content: center; }
+  .main-cc h2 {
+    color: wheat;
+    display: flex;
+    justify-content: center; }
+  .main-cc ol {
     color: white;
     font-size: x-large;
     font-style: oblique;
     font-variant: small-caps;
     background-color: #e76b8a77;
-    width: 50%; }
-
-/* Contacto */
-.main h1 {
-  color: wheat;
-  display: flex;
-  justify-content: center; }
-
-.main form {
-  display: flex;
-  justify-items: center;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px; }
-  .main form input {
-    border-radius: 15px;
-    border-width: 3px;
-    border-color: #f9cad0;
-    background-color: #eeaed5d2; }
-    .main form input:hover {
-      border-color: #ff54be;
-      border-width: 6px; }
-  .main form textarea {
-    border-radius: 15px;
-    border-width: 3px;
-    border-color: #f9cad0;
-    background-color: #eeaed5d2; }
-    .main form textarea:hover {
-      border-color: #ff54be;
-      border-width: 6px; }
-  .main form label {
+    width: 50%;
+    font-family: 'Handlee', cursive; }
+    .main-cc ol :hover {
+      background-color: rgba(211, 107, 199, 0.501);
+      border-radius: 15px;
+      transition: 1s; }
+  .main-cc .main-contacto h1 {
     color: wheat;
-    background-color: #e76b8a77; }
-    .main form label select {
-      color: #ff54be;
-      border-radius: 8px; }
-
-.main h2 {
-  color: wheat; }
-
-/* FAQ */
-.faq {
-  color: wheat;
-  font-size: x-large;
-  font-style: oblique;
-  font-variant: small-caps;
-  width: 50%;
-  background-color: #e76b8a77; }
+    display: flex;
+    justify-content: center; }
+  .main-cc .main-contacto form {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px; }
+    .main-cc .main-contacto form input {
+      border-radius: 15px;
+      border-width: 3px;
+      border-color: #f9cad0;
+      background-color: #eeaed5d2; }
+      .main-cc .main-contacto form input:hover {
+        border-color: #ff54be;
+        border-width: 6px; }
+    .main-cc .main-contacto form textarea {
+      border-radius: 15px;
+      border-width: 3px;
+      border-color: #f9cad0;
+      background-color: #eeaed5d2; }
+      .main-cc .main-contacto form textarea:hover {
+        border-color: #ff54be;
+        border-width: 6px; }
+    .main-cc .main-contacto form label {
+      color: wheat;
+      background-color: #e76b8a77; }
+      .main-cc .main-contacto form label select {
+        color: #ff54be;
+        border-radius: 8px; }
+  .main-cc .main-contacto h2 {
+    color: wheat; }
+  .main-cc .faq {
+    color: wheat;
+    font-size: x-large;
+    font-style: oblique;
+    font-variant: small-caps;
+    width: 50%;
+    background-color: #e76b8a77;
+    border-radius: 15px;
+    font-family: 'Handlee', cursive; }
+    .main-cc .faq :hover {
+      background-color: rgba(211, 107, 199, 0.501);
+      border-radius: 15px;
+      transition: 1s; }
 
 /* 4K */
 @media (max-width: 2561px) {
